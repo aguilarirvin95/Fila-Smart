@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-dark font-sans antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-xl font-bold transition-all duration-200
+      shadow-sm hover:shadow-md hover:bg-primary/90 active:scale-95 focus:outline-none
+      focus:ring-2 focus:ring-primary/40;
+  }
+
+  .btn-accent {
+    @apply bg-accent text-white px-6 py-3 rounded-xl font-bold transition-all duration-200
+      shadow-sm hover:shadow-md hover:bg-accent/90 active:scale-95 focus:outline-none
+      focus:ring-2 focus:ring-accent/40;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-white px-6 py-3 rounded-xl font-bold transition-all duration-200
+      shadow-sm hover:shadow-md hover:bg-secondary/90 active:scale-95 focus:outline-none
+      focus:ring-2 focus:ring-secondary/40;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary text-primary px-6 py-3 rounded-xl font-bold transition-all duration-200
+      hover:bg-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-primary/40;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-sm border border-gray-100 p-5;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-dark
+      placeholder-dark/30 font-medium focus:outline-none focus:ring-2 focus:ring-primary/30
+      focus:border-primary transition-all duration-200;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@keyframes pulse-badge {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@layer utilities {
+  .animate-float {
+    animation: float 4.5s ease-in-out infinite;
+  }
+}
