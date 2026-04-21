@@ -335,10 +335,14 @@ celery -A config flower --port=5555
 
 | Rol         | Responsable       | Contacto                   |
 |-------------|-------------------|----------------------------|
-| DevOps      | [Tu nombre]       | tu.email@empresa.com       |
-| Backend     | [Nombre]          | backend@empresa.com        |
-| Frontend    | [Nombre]          | frontend@empresa.com       |
-| QA          | [Nombre]          | qa@empresa.com             |
+| DevOps      | Irvin Aguilar     | aguilar.irvin95@gmail.com  |
+| Backend     | Julissa Lopez     | julissalopez2040@gmail.com |
+| Backend     | Samuel Donado     | samuel.donado.84@gmail.com |
+| Frontend    | Kevin Perdomo     | kevin030pgj@gmail.com      |
+| Frontend    | Kevin Mejia       | Kevmejia6.99@gmail.com     |
+| QA          | Irvin Aguilar     | aguilar.irvin95@gmail.com  |
+| QA          | Kevin Mejia       | Kevmejia6.99@gmail.com     |
+| QA          | Kevin Perdomo     | kevin030pgj@gmail.com      |
 
 ---
 
